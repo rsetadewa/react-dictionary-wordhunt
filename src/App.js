@@ -3,6 +3,7 @@ import { grey } from "@material-ui/core/colors";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 import Definitions from "./components/Definitions/Definitions";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -55,6 +56,7 @@ function App() {
         transition: "all 0.5s linear",
       }}
     >
+      <Navbar />
       <Container
         maxWidth="md"
         style={{
